@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-16T21:09:00Z",
+  "title": "Design System: Charlimar Rocha",
+  "extensions": {
+    "colorMeta": {
+      "primary": { "role": "primary", "displayName": "Champagne Gold", "canonical": "#d4af37", "tonalRamp": ["#3a2e0e", "#5a4716", "#7a611f", "#9d7c27", "#bf9830", "#d4af37", "#e5c567", "#f5e4a8"] },
+      "neutral-bg": { "role": "neutral", "displayName": "Velvet Charcoal Black", "canonical": "#0b0a08", "tonalRamp": ["#050403", "#0b0a08", "#13120f", "#1a1814", "#282520", "#454037", "#6b6456", "#948c7e"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display (Italiana)", "purpose": "Hero headlines only." },
+      "headline": { "displayName": "Headline (Marcellus)", "purpose": "Section titles." },
+      "body": { "displayName": "Body (Urbanist)", "purpose": "Paragraphs and descriptions." }
+    },
+    "shadows": [
+      { "name": "subtle", "value": "0 4px 16px rgba(0, 0, 0, 0.5)", "purpose": "Cards at rest and secondary blocks." },
+      { "name": "elevation", "value": "0 16px 36px rgba(0, 0, 0, 0.65)", "purpose": "Hover lift and hero portrait framing." }
+    ],
+    "motion": [
+      { "name": "ease-smooth", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Smooth acceleration for hover, cards and accordions." }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "768px" },
+      { "name": "tablet", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary CTA Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "High-conversion WhatsApp button in champagne gold.",
+      "html": "<button class=\"ds-btn-primary\">AGENDAR HORÁRIO</button>",
+      "css": ".ds-btn-primary { background: #d4af37; color: #0b0a08; padding: 15px 30px; letter-spacing: 0.03em; text-transform: uppercase; font-weight: 700; border: none; border-radius: 4px; transition: background 0.2s, transform 0.2s; box-shadow: 0 4px 16px rgba(0,0,0,0.4); } .ds-btn-primary:hover { background: #f5e4a8; transform: translateY(-2px); }"
+    },
+    {
+      "name": "Secondary Outlined Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outlined button with subtle border for secondary navigation.",
+      "html": "<button class=\"ds-btn-secondary\">VER TRANSFORMAÇÕES</button>",
+      "css": ".ds-btn-secondary { background: rgba(255, 255, 255, 0.04); color: #f7f4ee; padding: 15px 28px; letter-spacing: 0.02em; font-weight: 600; border: 1px solid rgba(212, 175, 55, 0.22); border-radius: 4px; transition: all 0.2s; } .ds-btn-secondary:hover { background: rgba(212, 175, 55, 0.1); border-color: #d4af37; color: #f5e4a8; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Golden Hour Glow: Luminosidade & Luxo Quente",
+    "overview": "O sistema de design de Charlimar Rocha reflete o ambiente intimista, elegante e caloroso de seu atendimento exclusivo no salão Spetacollare Sul em Fortaleza. Rejeita o padrão estéril dos salões genéricos em favor de uma estética refinada e cinematográfica.",
+    "keyCharacteristics": [
+      "Atmosfera aveludada em preto profundo (#0b0a08) com contrastes dourados nobres",
+      "Tipografia editorial escultórica (Italiana & Marcellus) combinada com corpo limpo (Urbanist)",
+      "Foco em provas visuais autênticas e depoimentos de 24 anos de maestria",
+      "Conversão direta e interativa para WhatsApp sem barreiras cognitivas"
+    ],
+    "rules": [
+      { "name": "The Golden Ratio Rule", "body": "O dourado nunca ultrapassa 15% da área visual de qualquer tela. Ele atua como guia de atenção e toque de joalheria.", "section": "colors" },
+      { "name": "The No-Gradient-Text Rule", "body": "Os títulos mantêm peso e luminosidade através da tipografia sólida e do contraste com o fundo escuro.", "section": "typography" }
+    ],
+    "dos": [
+      "Do manter a tipografia de corpo acima de 12px",
+      "Do formatar todas as mensagens de WhatsApp de forma clara, acolhedora e personalizada",
+      "Do preservar sombras neutras com blur generoso e offsets suaves",
+      "Do usar fotografia autêntica de clientes e do espaço Spetacollare Sul"
+    ],
+    "donts": [
+      "Don't usar texto em gradiente",
+      "Don't adicionar kickers ou sobrancelhas artificiais acima dos títulos H1 e H2",
+      "Don't usar halos fluorescentes ou box-shadows com cores saturadas em fundos escuros",
+      "Don't usar ícones de emojis em substituição a vetores SVG limpos e consistentes"
+    ]
+  }
+}
