@@ -637,6 +637,31 @@ button {
   transform: translateY(-1px);
 }
 
+@media (max-width: 490px) {
+  .brand-bar-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .brand-bar-info {
+    align-items: center;
+  }
+
+  .brand-bar-stats {
+    justify-content: center;
+    width: 100%;
+    /* Mantém o flex-wrap original para que se comportem igualzinho no mobile */
+    flex-wrap: wrap;
+  }
+
+  .btn-clean-cta {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 /* GALLERY */
 .gallery-section {
   padding: 5.5rem 0;
